@@ -1,0 +1,113 @@
+body {
+ margin :0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.bigbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+}
+.bigbox .tablebox {
+    overflow-y: auto;
+    margin: 0 20px;
+    background-color: aliceblue;
+    max-height: 500px;
+}
+
+.bigbox .tablebox ::-webkit-scrollbar {
+    display: none;
+}
+.bigbox .tablebox table {
+    border-collapse: collapse;
+}
+.bigbox .tablebox table thead tr th{
+    color:white;
+    background-color: blue;
+}
+.bigbox .tablebox table thead tr th,
+.bigbox .tablebox table tbody tr td{
+    text-align: center;
+    padding:20px 40px;
+}
+.bigbox .tablebox table tbody tr:nth-child(odd){
+    background-color:white;
+}
+
+.bigbox .buttonbox button {
+    margin: 40px;
+    border:0;
+    color:white;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #5cb;
+}
+.bigbox .buttonbox button:hover {
+    background-color: blue;
+}
+.bigbox .tosspot{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 60px;
+    background-image: linear-gradient(120deg, blue 0%, white 100%);
+    border-radius: 5px;
+}
+.bigbox .tosspot h2{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.bigbox .tosspot ul li{
+    color: white;
+    margin:10px;
+}
+.bigbox .tosspot ul li select{
+    border: 0;
+    width: 100px;
+}
+.bigbox .tosspot ul li input{
+    background-color: whitesmoke;
+    border: 0;
+    width: 200px;
+    height: 22px;
+    border-bottom: 1px white solid;
+}
+.bigbox .tosspot button{
+    width: 100px;
+    height:35px;
+    color:white;
+    margin:5px 10px;
+    border:0;
+    border-radius: 5px;
+    background-color: #4268e4;
+}
+.bigbox .tosspot button:nth-child(even){
+    background-color: grey;
+}
+.popupstyle{
+    display: none;
+    width: 160px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding:8px 0;
+    position: fixed;
+    z-index: inherit;
+    top: 45%;
+    left: 50%;
+    margin-left: -80px;
+} 
+
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+<title>表格</title>
+<link rel="stylesheet" href="./table.css">
+<script src="./table.js"></script>
+</head>
+<body>
+    <div class= "bigbox">
+        <div class ="tablebox">
+            <table id ="table">
+                <thead>
+                    <tr>
+                        <th>个人信息</th>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>年龄</th>
+                        <th>班级</th>
+                    </tr>
+                </thead>
+                <tbody id ="tbMain">
+                    <tr>
+                        <td>1</td>
+                        <td>小明</td>
+                        <td>1</td>
+                        <td>18</td>
+                        <td>一班</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>小红</td>
+                        <td>2</td>
+                        <td>18</td>
+                        <td>一班</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class ="tosspot" id="tosspot">
+            <h2>添加一条数据</h2>
+            <ul>
+                <li>姓名: <input type="text" id="name"></li>
+                <li>学号: <input type="text" id="stu_name"></li>
+                <li>年龄: <input type="text" id="age"></li>
+                <li>班级: <select id ="grade">
+                    <option value="一班">一班</option>
+                    <option value="二班">二班</option>
+                    <option value="三班">三班</option>
+                    <option value="四班">四班</option>
+                </select>
+                </li>
+            </ul>
+            <div>
+                <button id="add_y" onclick="add(id)">添加</button>
+                <button id="add_n" onclick="add(id)">取消</button>
+            </div>
+        </div>
+        <div id ="canal" class="tosspot">
+            <h2>删除一条</h2>
+            <ul>
+                <li>学号: <input type="text" id ="remove"></li>
+            </ul>
+            <div>
+                <button id="remove_y" onclick="del(id)">删除</button>
+                <button id="remove_n" onclick="del(id)">取消</button>
+            </div>
+        </div>
+        <div class ="buttonbox">
+            <button id="add" onclick="load(id)">添加数据</button>
+            <button id="del" onclick="load(id)">删除数据</button>
+        </div>
+    </div>
+
+</body>
